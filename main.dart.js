@@ -45669,7 +45669,7 @@ r=m.b
 q=H.c([new U.vp(o),M.dQ(o,L.B2("My resume",o),o,o,o,o,o,o,1/0),M.dQ(o,L.B2("My hobby",o),o,o,o,o,o,o,1/0),M.dQ(o,L.B2("Contact me",o),o,o,o,o,o,o,1/0)],s)
 q=M.dQ(o,new D.q9(C.m,n,new G.S1(q,P.aM([null,0],t.st,t.S)),o),o,o,o,r,o,o,o)
 p=P.bU(0,0,1)
-return new Y.rr(new M.qG(new E.o8(k,0,i,new T.dp(j,o,o),!0,new P.P(1/0,56),o),T.r9(C.fS,H.c([q,T.Ot(o,new F.ll(M.dQ(o,new T.AI(n,new E.MM(16,16,8,16,C.vP,C.rZ,C.bY,1),C.m,4,n,o),o,o,o,400,o,o,o),p,o),o,o,m.a*0.052083333333333336,o,r/2,o)],s),C.fL),o),o)}}
+return new Y.rr(new M.qG(new E.o8(k,0,i,new T.dp(j,o,o),!0,new P.P(1/0,56),o),T.r9(C.fS,H.c([q,T.Ot(o,new F.ll(M.dQ(o,new T.AI(n,new E.MM(16,16,8,16,C.vP,C.rZ,C.bY,1),C.m,4,n,o),o,o,o,400,o,o,o),p,o),o,o,m.a*0.052083333333333336,o,r/2.5,o)],s),C.fL),o),o)}}
 Y.LV.prototype={
 $0:function(){window.location.href="https://www.github.com/absarrahman"},
 $S:1}
