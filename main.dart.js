@@ -46056,7 +46056,7 @@ r=P.bv(0,550,0)
 return M.bC(q,T.Jo(H.c([p,s,M.bC(q,new F.fg(L.eR("Competitive Programmer, App developer",B.y4(q,o*0.02051983584131327,C.eO)),r,q),C.k,q,q,q,q,q,q,q,q,q,q)],t.Y),C.h2,C.fp),C.k,q,q,q,q,q,q,q,q,q,q)}}
 X.qv.prototype={
 H:function(a,b){var s=P.bv(0,550,0)
-return new F.fg(T.a3n(null,new K.wm(C.j,new L.i3("images/profile.jpg"),this.c,null),C.k,C.o,8,this.d,C.ax),s,null)}}
+return new F.fg(T.a3n(null,new K.wm(C.j,new L.i3("assets/images/profile.jpg"),this.c,null),C.k,C.o,8,this.d,C.ax),s,null)}}
 D.rt.prototype={
 H:function(a,b){var s,r,q,p=null,o=this.c,n=o.a,m=o.b
 n=n>m?n:m
