@@ -7,8 +7,8 @@
 /* ============================
    CONFIG
 ============================ */
-const BASE_URL = 'https://absarrahman.github.io/'
-const BLOG_DATA_URL = `${BASE_URL}writing/api/posts.json`;
+const BASE_URL = 'https://absarrahman.github.io/writing/'
+const BLOG_DATA_URL = `${BASE_URL}api/posts.json`;
 
 /* ============================
    TWEAKS  (mirrors index.js)
@@ -169,7 +169,7 @@ function renderPosts(posts) {
     items.forEach(p => {
       const a = document.createElement('a');
       a.className = 'post-row';
-      a.href = `#/${p.slug}`;
+      a.href = `${BASE_URL}${p.slug}`;
       a.dataset.title = p.title.toLowerCase();
       a.dataset.dek = p.dek.toLowerCase();
       a.dataset.tags = p.tags.join(',').toLowerCase();
