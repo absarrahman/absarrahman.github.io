@@ -22,8 +22,8 @@
     <div class="glow" id="glow"></div>
 
     <!-- =====================
-         NAVIGATION
-         ===================== -->
+            NAVIGATION
+            ===================== -->
     <nav class="top" id="topnav">
         <div class="wrap row">
             <a class="mark" href="/">
@@ -45,8 +45,8 @@
 
     <main>
         <!-- =====================
-           HERO
-           ===================== -->
+                    HERO
+                    ===================== -->
         <section class="hero blog-hero">
             <div class="wrap">
                 <div class="eyebrow">Writing · <span id="total-bytes">—</span> posts · est. 2023</div>
@@ -65,44 +65,47 @@
                     Migrating all the posts will take some time. Stay tuned!
                 </p>
                 <!-- terminal search -->
-                <div class="term" role="search">
-                    <div class="term-bar">
-                        <span class="lights">
-                            <span class="r-dot"></span>
-                            <span class="y-dot"></span>
-                            <span class="g-dot"></span>
-                        </span>
-                        <span class="path">~/<b>writing</b> — zsh — 96×24</span>
-                        <span class="badge">grep -i</span>
-                    </div>
-                    <div class="term-body">
-                        <div class="term-out">Last login: <span id="lastlogin">—</span> on ttys001</div>
-                        <div class="term-out">absar@reaperhouse:~/writing $ <span style="color:var(--ink-2)">ls -lh
-                                posts/</span></div>
-                        <div class="term-out">total <span id="total-bytes-term">—</span> entries · grouped by year ·
-                            sorted desc</div>
-                        <div class="term-line" style="margin-top:10px">
-                            <span class="pr">absar<span class="at">@</span><span class="host">reaperhouse</span><span
-                                    class="arrow">›</span> grep</span>
-                            <label class="term-search">
-                                <input id="q" type="text" autocomplete="off" spellcheck="false"
-                                    placeholder="search title, tag, or keyword…" />
-                                <span class="term-cursor" id="cursor"></span>
-                            </label>
+                <div class="term-wrapper" style="margin-top: clamp(40px, 5vw, 64px);">
+                    <p class="term-label">Search posts</p>
+                    <div class="term" role="search">
+                        <div class="term-bar">
+                            <span class="lights">
+                                <span class="r-dot"></span>
+                                <span class="y-dot"></span>
+                                <span class="g-dot"></span>
+                            </span>
+                            <span class="path">~/<b>writing</b> — zsh — 96×24</span>
+                            <span class="badge">grep -i</span>
                         </div>
-                    </div>
-                    <div class="term-hint">
-                        <span class="term-stat"><kbd>/</kbd> focus search</span>
-                        <span class="term-stat"><kbd>esc</kbd> clear</span>
-                        <span class="term-stat"><span class="n" id="result-n">—</span> matches</span>
+                        <div class="term-body">
+                            <div class="term-out">Last login: <span id="lastlogin">—</span> on ttys001</div>
+                            <div class="term-out">absar@reaperhouse:~/writing $ <span style="color:var(--ink-2)">ls -lh
+                                    posts/</span></div>
+                            <div class="term-out">total <span id="total-bytes-term">—</span> entries · grouped by year ·
+                                sorted desc</div>
+                            <div class="term-line" style="margin-top:10px">
+                                <span class="pr">absar<span class="at">@</span><span
+                                        class="host">reaperhouse</span><span class="arrow">›</span> grep</span>
+                                <label class="term-search">
+                                    <input id="q" type="text" autocomplete="off" spellcheck="false"
+                                        placeholder="search title, tag, or keyword…" />
+                                    <span class="term-cursor" id="cursor"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="term-hint">
+                            <span class="term-stat"><kbd>/</kbd> focus search</span>
+                            <span class="term-stat"><kbd>esc</kbd> clear</span>
+                            <span class="term-stat"><span class="n" id="result-n">—</span> matches</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- =====================
-           POST INDEX
-           ===================== -->
+                        POST INDEX
+                        ===================== -->
         <section class="post-index">
             <div class="wrap" id="indexBody"></div>
 
@@ -121,8 +124,8 @@
         </section>
 
         <!-- =====================
-           FOOTER
-           ===================== -->
+                            FOOTER
+                            ===================== -->
         <div class="wrap">
             <footer class="foot">
                 <span>© 2026 Moh Absar Rahman</span>

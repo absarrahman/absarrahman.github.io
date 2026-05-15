@@ -13,24 +13,83 @@
 /* ============================
    TERMINAL SEARCH WIDGET
 ============================ */
+
+/* Attention label above the terminal */
+.term-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+    opacity: 0;
+    animation: fadeUp .7s .85s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+.term-label::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--accent) 55%, transparent);
+    animation: pulse 2.6s ease-in-out infinite;
+    flex-shrink: 0;
+}
+.term-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    width: 28px;
+    background: color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
 .term {
-    margin-top: clamp(40px, 5vw, 64px);
+    margin-top: 0;
     background: oklch(0.13 0.010 var(--hue));
-    border: 1px solid var(--rule-2);
+    border: 1px solid color-mix(in oklab, var(--accent) 38%, var(--rule-2));
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 30px 60px -30px oklch(0.05 0 0 / .6);
+    overflow: visible; /* allow glow to escape */
+    box-shadow:
+        0 0 0 1px color-mix(in oklab, var(--accent) 12%, transparent),
+        0 0 32px -4px color-mix(in oklab, var(--accent) 22%, transparent),
+        0 30px 60px -30px oklch(0.05 0 0 / .6);
     opacity: 0;
     transform: translateY(14px);
     animation: fadeUp .9s 1s cubic-bezier(.2, .8, .2, 1) forwards;
+    position: relative;
+    /* clip children but keep overflow:visible for glow */
+    border-radius: 8px;
+}
+/* clip inner rounded corners while keeping outer glow visible */
+.term > * { position: relative; z-index: 1; }
+.term::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Focused state — intensify glow when user is searching */
+.term:focus-within {
+    border-color: color-mix(in oklab, var(--accent) 65%, var(--rule-2));
+    box-shadow:
+        0 0 0 1px color-mix(in oklab, var(--accent) 25%, transparent),
+        0 0 48px -4px color-mix(in oklab, var(--accent) 35%, transparent),
+        0 30px 60px -30px oklch(0.05 0 0 / .6);
+    transition: border-color .3s, box-shadow .3s;
 }
 .term-bar {
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 10px 14px;
-    border-bottom: 1px solid var(--rule-2);
-    background: oklch(0.18 0.010 var(--hue));
+    border-bottom: 1px solid color-mix(in oklab, var(--accent) 22%, var(--rule-2));
+    background: oklch(0.18 0.012 var(--hue));
 }
 .term-bar .lights { display: flex; gap: 6px; }
 .term-bar .lights span { width: 11px; height: 11px; border-radius: 50%; }
@@ -60,7 +119,20 @@
     color: var(--ink-2);
     line-height: 1.7;
 }
-.term-line { display: flex; gap: 10px; }
+.term-line {
+    display: flex;
+    gap: 10px;
+    background: color-mix(in oklab, var(--accent) 6%, transparent);
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin: 0 -8px;
+    border: 1px solid color-mix(in oklab, var(--accent) 14%, transparent);
+    transition: background .25s, border-color .25s;
+}
+.term-line:focus-within {
+    background: color-mix(in oklab, var(--accent) 10%, transparent);
+    border-color: color-mix(in oklab, var(--accent) 30%, transparent);
+}
 .term-line .pr { color: oklch(0.78 0.16 145); user-select: none; }
 .term-line .pr .at    { color: var(--ink-3); }
 .term-line .pr .host  { color: var(--accent); }
@@ -104,7 +176,7 @@
     display: flex;
     gap: 18px;
     flex-wrap: wrap;
-    border-top: 1px dashed var(--rule-2);
+    border-top: 1px dashed color-mix(in oklab, var(--accent) 22%, var(--rule-2));
 }
 .term-hint kbd {
     font-family: var(--mono);
