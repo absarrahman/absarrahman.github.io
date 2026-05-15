@@ -1,10 +1,10 @@
 /* ============================
-   INDEX PAGE — specific styles
-   Requires: styles.css
+INDEX PAGE — specific styles
+Requires: styles.css
 ============================ */
 
 /* ============================
-   HERO META-ROW  (index only)
+HERO META-ROW  (index only)
 ============================ */
 .hero .meta-row {
     display: grid;
@@ -35,7 +35,7 @@
 .hero .meta-row .cell .v a:hover { border-color: var(--ink); }
 
 /* ============================
-   SECTIONS
+SECTIONS
 ============================ */
 section.block {
     padding: var(--section-y) 0;
@@ -85,7 +85,7 @@ section.block {
 }
 
 /* ============================
-   ABOUT
+ABOUT
 ============================ */
 .about-grid {
     display: grid;
@@ -157,7 +157,7 @@ section.block {
 }
 
 /* ============================
-   EXPERIENCE
+EXPERIENCE
 ============================ */
 .xp-list { display: flex; flex-direction: column; }
 .xp-item {
@@ -266,7 +266,7 @@ section.block {
 }
 
 /* ============================
-   SKILLS
+SKILLS
 ============================ */
 .skills-grid { display: grid; grid-template-columns: 160px 1fr; gap: 16px 48px; }
 .skills-group { display: contents; }
@@ -313,7 +313,7 @@ section.block {
 }
 
 /* ============================
-   TICKER / MARQUEE
+TICKER / MARQUEE
 ============================ */
 .ticker {
     overflow: hidden;
@@ -338,7 +338,7 @@ section.block {
 @keyframes scroll { to { transform: translateX(-50%); } }
 
 /* ============================
-   CONTACT
+CONTACT
 ============================ */
 .contact {
     padding: var(--section-y) 0 clamp(56px, 10vw, 100px);
@@ -394,7 +394,7 @@ section.block {
 .contact .cta:hover .arrow { transform: translateX(8px); }
 
 /* ============================
-   LINKS GRID
+LINKS GRID
 ============================ */
 .links {
     margin-top: clamp(40px, 8vw, 88px);

@@ -1,5 +1,5 @@
 /* ============================
-   CSS CUSTOM PROPERTIES
+CSS CUSTOM PROPERTIES
 ============================ */
 :root {
     --hue: 1;
@@ -20,7 +20,7 @@
 }
 
 /* ============================
-   RESET & BASE
+RESET & BASE
 ============================ */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
@@ -39,7 +39,7 @@ body {
 img { max-width: 100%; display: block; }
 
 /* ============================
-   GRAIN OVERLAY
+GRAIN OVERLAY
 ============================ */
 .grain {
     position: fixed;
@@ -52,7 +52,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================
-   CURSOR GLOW (desktop only)
+CURSOR GLOW (desktop only)
 ============================ */
 .glow {
     position: fixed;
@@ -70,7 +70,7 @@ img { max-width: 100%; display: block; }
 @media (hover: hover) { .glow.on { opacity: 1; } }
 
 /* ============================
-   LAYOUT
+LAYOUT
 ============================ */
 .wrap {
     max-width: 1240px;
@@ -81,7 +81,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================
-   NAVIGATION
+NAVIGATION
 ============================ */
 nav.top {
     position: sticky;
@@ -238,7 +238,7 @@ nav.top ul a.active::before { transform: scaleX(1); transform-origin: left cente
 }
 
 /* ============================
-   HERO  (shared — index and blog both extend this)
+HERO  (shared — index and blog both extend this)
 ============================ */
 .hero {
     padding: clamp(56px, 12vw, 160px) 0 var(--section-y);
@@ -304,7 +304,7 @@ nav.top ul a.active::before { transform: scaleX(1); transform-origin: left cente
 @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
 /* ============================
-   FOOTER
+FOOTER
 ============================ */
 footer.foot {
     padding: 22px 0 32px;
@@ -345,7 +345,7 @@ footer.foot a:hover { color: var(--ink); border-color: var(--ink); }
 }
 
 /* ============================
-   REVEAL ANIMATION
+REVEAL ANIMATION
 ============================ */
 .r {
     opacity: 0;
@@ -363,7 +363,7 @@ footer.foot a:hover { color: var(--ink); border-color: var(--ink); }
 }
 
 /* ============================
-   TWEAKS PANEL
+TWEAKS PANEL
 ============================ */
 .tweaks-panel {
     position: fixed;
