@@ -5,23 +5,23 @@ const skills = [
   {
     group: "Frameworks",
     items:
-      [
-        ["UIKit", true],
-        ["SwiftUI", true],
-        ["Flutter", true],
-        ["React Native", true]
-      ]
+    [
+      ["UIKit", true],
+      ["SwiftUI", true],
+      ["Flutter", true],
+      ["React Native", true]
+    ]
   },
   {
     group: "Languages",
     items:
-      [
-        ["Swift", true],
-        ["Dart", true],
-        ["Java", false],
-        ["Python", false],
-        ["C++", false]
-      ]
+    [
+      ["Swift", true],
+      ["Dart", true],
+      ["Java", false],
+      ["Python", false],
+      ["C++", false]
+    ]
   },
   {
     group: "Databases",
@@ -36,13 +36,13 @@ const skills = [
   {
     group: "Source",
     items:
-      [
-        ["Git", true],
-        ["GitHub", true],
-        ["Bitbucket", true],
-        ["GitLab", false],
-        ["Gerrit", false]
-      ]
+    [
+      ["Git", true],
+      ["GitHub", true],
+      ["Bitbucket", true],
+      ["GitLab", false],
+      ["Gerrit", false]
+    ]
   },
   {
     group: "Extras",
