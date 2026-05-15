@@ -135,26 +135,6 @@
                             </div>
             </main>
 
-            <!-- tweaks panel -->
-            <div class="tweaks-panel" id="tweaks">
-                <div class="t-title">Tweaks</div>
-                <label>
-                    Accent hue
-                    <input id="hue" type="range" min="0" max="360" value="1" />
-                </label>
-                <div class="swatches" id="swatches">
-                    <div class="sw" data-h="45" style="background: oklch(0.62 0.14 45);"></div>
-                    <div class="sw" data-h="22" style="background: oklch(0.62 0.14 22);"></div>
-                    <div class="sw" data-h="145" style="background: oklch(0.62 0.14 145);"></div>
-                    <div class="sw" data-h="230" style="background: oklch(0.62 0.14 230);"></div>
-                    <div class="sw" data-h="1" style="background: oklch(0.59 0.24 1);"></div>
-                </div>
-                <label>
-                    Grain
-                    <input id="grainT" type="checkbox" checked />
-                </label>
-            </div>
-
             <!-- load order matters: shared utilities first, then page logic -->
             <script src="js/shared.js" defer></script>
             <script src="js/blog.js" defer></script>
