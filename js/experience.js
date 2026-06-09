@@ -3,7 +3,7 @@
 ============================ */
 const experience = [
   {
-    yr: "2026 — Present",
+    yr: "Feb 2026 — May 2026",
     role: "Student Grader",
     co: "University of Kansas",
     loc: "Lawrence, KS",
